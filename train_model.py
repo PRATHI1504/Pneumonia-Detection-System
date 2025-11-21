@@ -82,7 +82,10 @@ def train():
 
     # 4. Save the Best Model
     print(f"\n🏆 Training Complete. Best Val Acc: {best_acc:.4f}")
-    torch.save(best_model_wts, "pneumonia_model.pth")
+    # Save inside the hidden folder
+    import os
+    os.makedirs(".streamlit", exist_ok=True) # Create folder if missing
+    torch.save(best_model_wts, ".streamlit/pneumonia_model.pth")
     print("💾 Model saved as 'pneumonia_model.pth'")
 
 if __name__ == "__main__":
