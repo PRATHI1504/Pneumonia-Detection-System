@@ -1,14 +1,5 @@
-# Ignore all Model weight files
-*.pth
-model.pth
-pneumonia_model.pth
+# 1. Ignore everything in the .streamlit folder (default)
+.streamlit/*
 
-# Ignore the dataset folder (too large for GitHub)
-data/
-
-# Ignore Python cache files
-__pycache__/
-*.pyc
-
-# Ignore VS Code settings
-.vscode/
+# 2. BUT... do NOT ignore the model file (The '!' means 'Exception')
+!.streamlit/pneumonia_model.pth
