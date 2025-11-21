@@ -8,7 +8,7 @@ from src.model_utils import get_model, GradCAM, overlay_heatmap
 
 # --- Configuration ---
 st.set_page_config(page_title="Pneumonia Detector", page_icon="", layout="wide")
-MODEL_PATH = "pneumonia_model.pth"
+MODEL_PATH = ".streamlit/pneumonia_model.pth"
 CLASSES = ['NORMAL', 'PNEUMONIA'] # Matches folder names
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
