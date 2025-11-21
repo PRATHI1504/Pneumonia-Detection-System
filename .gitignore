@@ -1,0 +1,14 @@
+# Ignore all Model weight files
+*.pth
+model.pth
+pneumonia_model.pth
+
+# Ignore the dataset folder (too large for GitHub)
+data/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore VS Code settings
+.vscode/
